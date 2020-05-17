@@ -40,4 +40,4 @@ ASP.Net Core Application with MVC, WebAPI, EntityFramework, MySQL
 	 ```
 > Front-End runs on [http://localhost:3000](http://localhost:3000)
 
- - The Postman Collection can be see [here!](https://github.com/lrapelliboni/citel-test/blob/master/resources/citel.postman_collection.json) 
+ - The [Postman](https://www.postman.com/) Collection can be see [here!](https://github.com/lrapelliboni/citel-test/blob/master/resources/citel.postman_collection.json) 
