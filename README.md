@@ -8,6 +8,18 @@ ASP.Net Core Application with MVC, WebAPI, EntityFramework, MySQL
 	 `` mysql> USE citel; ``
 
 	`` mysql> CREATE TABLE `__EFMigrationsHistory` ( `MigrationId` nvarchar(150) NOT NULL, `ProductVersion` nvarchar(32) NOT NULL, PRIMARY KEY (`MigrationId`) );``
+
+- Edit [https://github.com/lrapelliboni/citel-test/blob/master/citel-api/Models/Context/CitelDbContext.cs](CitelDbContext) to change MySQL password: 
+	
+	```
+	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseMySQL("Server=localhost;User Id=root;Password=rootpass;Database=citel");
+            }
+        } 
+	```
 	
 - To access Back-End WebAPI project: 
 	 ```
