@@ -2,6 +2,7 @@
 # citel-test
 ASP.Net Core Application with MVC, WebAPI, EntityFramework, MySQL
 - Create MySQL database and Migrations table:
+	
 	`` mysql> CREATE DATABASE citel; ``
 
 	 `` mysql> USE citel; ``
