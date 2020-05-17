@@ -9,7 +9,7 @@ ASP.Net Core Application with MVC, WebAPI, EntityFramework, MySQL
 
 	`` mysql> CREATE TABLE `__EFMigrationsHistory` ( `MigrationId` nvarchar(150) NOT NULL, `ProductVersion` nvarchar(32) NOT NULL, PRIMARY KEY (`MigrationId`) );``
 
-- Edit [https://github.com/lrapelliboni/citel-test/blob/master/citel-api/Models/Context/CitelDbContext.cs](CitelDbContext) to change MySQL password: 
+- Edit [CitelDbContext](https://github.com/lrapelliboni/citel-test/blob/master/citel-api/Models/Context/CitelDbContext.cs) to change MySQL password: 
 	
 	```
 	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
