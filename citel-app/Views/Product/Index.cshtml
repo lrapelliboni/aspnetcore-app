@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Product>
+@{ Layout = "_Layout"; ViewBag.Title = "All Products";}
+
+
+<h2>All Products</h2>
+<a asp-action="Add" class="btn btn-sm btn-primary">Add Product</a>
+<table class="table table-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.Category.Name</td>
+                <td>
+                    <a style="display: inline-block;" class="btn btn-primary" asp-action="Update" asp-route-id="@product.Id">[Edit]</a>
+                    <form style="display: inline-block;" id="productDeleteForm-@product.Id" asp-action="Delete" method="post">
+                        <input type="hidden" value="@product.Id" name="id" />
+                        <a href="javascript:confirmDelete(@product.Id);" class="btn btn-danger">[Delete]</a>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+    function confirmDelete(id) {
+        let c = confirm('Are you sure?');
+        if (c) {
+            document.getElementById("productDeleteForm-" + id).submit();
+        }
+    }
+</script>

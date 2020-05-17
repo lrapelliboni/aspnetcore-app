@@ -1,0 +1,15 @@
+﻿@model Category
+@{ Layout = "_Layout"; ViewBag.Title = "Add Category";}
+
+<h2>Add Category</h2>
+<form asp-action="Add" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Name:</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    
+    <div class="panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Add</button> <a asp-action="Index" class="btn btn-sm btn-warning">Back</a>
+    </div>
+</form>

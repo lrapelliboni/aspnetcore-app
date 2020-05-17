@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/boni/.dotnet/store/|arch|/|tfm|",
+      "/home/boni/.nuget/packages"
+    ]
+  }
+}

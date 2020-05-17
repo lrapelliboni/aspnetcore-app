@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "rtDfJ9HFJVIh7GErqB4k4EKN3rwb+Fx/nmZxU0x9A+/TJivvUPBEW3ZIrjjTjkQDvfalOr+OdiLjWnnDZv32uw==",
+  "success": true,
+  "projectFilePath": "/home/boni/Desktop/citel-test/citel-app/citel-app.csproj",
+  "expectedPackageFiles": [
+    "/home/boni/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.4/microsoft.aspnetcore.jsonpatch.3.1.4.nupkg.sha512",
+    "/home/boni/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.4/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.4.nupkg.sha512",
+    "/home/boni/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/boni/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/home/boni/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
